@@ -24,8 +24,8 @@ Route::get('/', function () {
     $promo= 'Promo';
     $linkpromo='/promo';
 
-    $porfolio= 'Porfolio';
-    $linkporfolio='/porfolio';
+    $portfolio= 'Portfolio';
+    $linkportfolio='/portfolio';
 
     $prodotti= 'Prodotti';
     $linkprodotti='/prodotti';
@@ -43,8 +43,8 @@ Route::get('/', function () {
             'link' =>$linkpromo
         ],
         [
-            'title' =>$porfolio,
-            'link' =>$linkporfolio
+            'title' =>$portfolio,
+            'link' =>$linkportfolio
         ],
         [
             'title' =>$prodotti,
@@ -59,7 +59,7 @@ Route::get('/', function () {
     return view('home', compact('name', 'surname','menu'));
 });
 
-Route::get('/about', function () {
+Route::get('/promo', function () {
 
     $home= 'Home';
     $linkhome='/';
@@ -67,8 +67,8 @@ Route::get('/about', function () {
     $promo= 'Promo';
     $linkpromo='/promo';
 
-    $porfolio= 'Porfolio';
-    $linkporfolio='/porfolio';
+    $portfolio= 'Portfolio';
+    $linkportfolio='/portfolio';
 
     $prodotti= 'Prodotti';
     $linkprodotti='/prodotti';
@@ -86,8 +86,137 @@ Route::get('/about', function () {
             'link' =>$linkpromo
         ],
         [
-            'title' =>$porfolio,
-            'link' =>$linkporfolio
+            'title' =>$portfolio,
+            'link' =>$linkportfolio
+        ],
+        [
+            'title' =>$prodotti,
+            'link' =>$linkprodotti
+        ],
+        [
+            'title' =>$about,
+            'link' =>$linkabout
+        ]
+    ];
+
+    return view('promo', compact('menu'));
+});
+
+Route::get('/portfolio', function () {
+
+    $home= 'Home';
+    $linkhome='/';
+
+    $promo= 'Promo';
+    $linkpromo='/promo';
+
+    $portfolio= 'Portfolio';
+    $linkportfolio='/portfolio';
+
+    $prodotti= 'Prodotti';
+    $linkprodotti='/prodotti';
+
+    $about= 'About';
+    $linkabout='/about';
+
+    $menu = [
+        [
+            'title' =>$home,
+            'link' =>$linkhome
+        ],
+        [
+            'title' =>$promo,
+            'link' =>$linkpromo
+        ],
+        [
+            'title' =>$portfolio,
+            'link' =>$linkportfolio
+        ],
+        [
+            'title' =>$prodotti,
+            'link' =>$linkprodotti
+        ],
+        [
+            'title' =>$about,
+            'link' =>$linkabout
+        ]
+    ];
+
+    return view('portfolio', compact('menu'));
+});
+
+Route::get('/prodotti', function () {
+
+    $home= 'Home';
+    $linkhome='/';
+
+    $promo= 'Promo';
+    $linkpromo='/promo';
+
+    $portfolio= 'Portfolio';
+    $linkportfolio='/portfolio';
+
+    $prodotti= 'Prodotti';
+    $linkprodotti='/prodotti';
+
+    $about= 'About';
+    $linkabout='/about';
+
+    $menu = [
+        [
+            'title' =>$home,
+            'link' =>$linkhome
+        ],
+        [
+            'title' =>$promo,
+            'link' =>$linkpromo
+        ],
+        [
+            'title' =>$portfolio,
+            'link' =>$linkportfolio
+        ],
+        [
+            'title' =>$prodotti,
+            'link' =>$linkprodotti
+        ],
+        [
+            'title' =>$about,
+            'link' =>$linkabout
+        ]
+    ];
+
+    return view('prodotti', compact('menu'));
+});
+
+Route::get('/about', function () {
+
+    $home= 'Home';
+    $linkhome='/';
+
+    $promo= 'Promo';
+    $linkpromo='/promo';
+
+    $portfolio= 'Portfolio';
+    $linkportfolio='/portfolio';
+
+    $prodotti= 'Prodotti';
+    $linkprodotti='/prodotti';
+
+    $about= 'About';
+    $linkabout='/about';
+
+    $menu = [
+        [
+            'title' =>$home,
+            'link' =>$linkhome
+        ],
+        [
+            'title' =>$promo,
+            'link' =>$linkpromo
+        ],
+        [
+            'title' =>$portfolio,
+            'link' =>$linkportfolio
         ],
         [
             'title' =>$prodotti,
