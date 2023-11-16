@@ -7,7 +7,6 @@
     <title>Hello World !</title>
 </head>
 <body>
-
     <header>
         <div class="container">
 
@@ -22,8 +21,6 @@
         </div>
     </header>
 
-    <h1>Hello World !</h1>
-    <p>Hello {{$name}} {{$surname}} !</p>
-
+    <h1>About</h1>
 </body>
 </html>

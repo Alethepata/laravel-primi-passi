@@ -14,7 +14,90 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+
     $name = 'Kira';
     $surname = 'The dog';
-    return view('home', compact('name', 'surname'));
+
+    $home= 'Home';
+    $linkhome='/';
+
+    $promo= 'Promo';
+    $linkpromo='/promo';
+
+    $porfolio= 'Porfolio';
+    $linkporfolio='/porfolio';
+
+    $prodotti= 'Prodotti';
+    $linkprodotti='/prodotti';
+
+    $about= 'About';
+    $linkabout='/about';
+
+    $menu = [
+        [
+            'title' =>$home,
+            'link' =>$linkhome
+        ],
+        [
+            'title' =>$promo,
+            'link' =>$linkpromo
+        ],
+        [
+            'title' =>$porfolio,
+            'link' =>$linkporfolio
+        ],
+        [
+            'title' =>$prodotti,
+            'link' =>$linkprodotti
+        ],
+        [
+            'title' =>$about,
+            'link' =>$linkabout
+        ]
+    ];
+
+    return view('home', compact('name', 'surname','menu'));
+});
+
+Route::get('/about', function () {
+
+    $home= 'Home';
+    $linkhome='/';
+
+    $promo= 'Promo';
+    $linkpromo='/promo';
+
+    $porfolio= 'Porfolio';
+    $linkporfolio='/porfolio';
+
+    $prodotti= 'Prodotti';
+    $linkprodotti='/prodotti';
+
+    $about= 'About';
+    $linkabout='/about';
+
+    $menu = [
+        [
+            'title' =>$home,
+            'link' =>$linkhome
+        ],
+        [
+            'title' =>$promo,
+            'link' =>$linkpromo
+        ],
+        [
+            'title' =>$porfolio,
+            'link' =>$linkporfolio
+        ],
+        [
+            'title' =>$prodotti,
+            'link' =>$linkprodotti
+        ],
+        [
+            'title' =>$about,
+            'link' =>$linkabout
+        ]
+    ];
+
+    return view('about', compact('menu'));
 });
