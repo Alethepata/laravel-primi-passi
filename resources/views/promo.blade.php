@@ -24,6 +24,13 @@
         </div>
     </header>
 
-    <h1>Promo</h1>
+    <div class="container">
+        <div class="jumbotron text-center">
+            <h1>Promo</h1>
+            <p>Works in progress</p>
+            <img src="https://static.wixstatic.com/media/215f08_7732a160d8d74d2389edbafc876d4236~mv2.gif" alt="">
+        </div>
+    </div>
+
 </body>
 </html>

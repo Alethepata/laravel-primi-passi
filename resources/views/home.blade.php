@@ -25,8 +25,12 @@
         </div>
     </header>
 
-    <h1>Hello World !</h1>
-    <p>Hello {{$name}} {{$surname}} !</p>
+    <div class="container">
+        <div class="jumbotron text-center">
+            <h1>Hello World !</h1>
+            <p>Hello {{$name}} {{$surname}} !</p>
+        </div>
+    </div>
 
 </body>
 </html>
